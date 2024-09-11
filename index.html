@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Turf Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cricket Turf Booking</h1>
+        <form id="bookingForm">
+            <label for="bookingDate">Choose Date:</label>
+            <input type="date" id="bookingDate" name="bookingDate" required>
+            <button type="button" onclick="fetchAvailableSlots()">Check Availability</button>
+        </form>
+
+        <div id="slotsContainer">
+            <!-- Available slots will be displayed here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
